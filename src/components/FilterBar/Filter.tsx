@@ -137,7 +137,7 @@ const Filter: React.FC = () => {
             <div className="flex-1 flex items-center gap-3">
               <div className="relative">
                 <select
-                  className="flex-1 pl-2 pr-6 py-2 text-xs font-semibold text-[#0B5AA5] border border-[#0B5AA5] rounded-lg appearance-none bg-white"
+                  className="flex-1 pl-2 pr-6 py-2 text-xs font-semibold focus:outline-none text-[#0B5AA5] border border-[#0B5AA5] rounded-lg appearance-none bg-white"
                   name="SaleMobile"
                   id="SaleMobile"
                 >

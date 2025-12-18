@@ -1,4 +1,4 @@
-import Group from "../../assets/Group.png";
+import logo from "../../assets/logo.png";
 import { navItems } from "../../utils/navItems";
 import { Hamburger, UserIcon } from "../Icons";
 
@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         </button>
 
         <div className="flex-shrink-0">
-          <img src={Group} alt="Houzeo" className="h-8" />
+          <img src={logo} alt="Houzeo" className="h-8" />
         </div>
 
         <nav className="hidden lg:flex items-center space-x-4 text-sm">
