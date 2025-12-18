@@ -4,12 +4,12 @@ import { Cross, DownArrow, Filters, Pen, Search } from "../Icons";
 const Filter: React.FC = () => {
   return (
     <div className="bg-white border-b border-gray-300 shadow-md">
-      <div className="max-w-[1400px] mx-auto px-3 lg:px-6 py-4">
+      <div className="max-w-screen-2xl mx-auto px-3 lg:px-6 py-4">
         {/* Desktop Layout - Hidden on mobile */}
-        <div className="hidden lg:flex items-center justify-between gap-4">
+        <div className="hidden lg:flex items-center justify-between gap-2">
           {/* Search Input */}
-          <div className="relative">
-            <div className="w-96 rounded-full p-[2px] bg-gradient-to-r from-[#2876C1] to-[#0E5293]">
+          <div className="relative flex-shrink-0">
+            <div className="w-72 xl:w-80 rounded-full p-[2px] bg-gradient-to-r from-[#2876C1] to-[#0E5293]">
               <input
                 className="w-full bg-white rounded-full py-2 pl-5 pr-12 text-gray-700 focus:outline-none"
                 type="text"
@@ -29,9 +29,9 @@ const Filter: React.FC = () => {
           </div>
 
           {/* Desktop Filters */}
-          <div className="relative">
+          <div className="relative flex-shrink-0">
             <select
-              className="min-w-36 px-4 py-3 text-sm font-semibold text-[#0B5AA5] border border-[#0B5AA5] focus:outline-none rounded-lg appearance-none bg-white"
+              className="w-28 xl:min-w-36 px-3 xl:px-4 py-3 text-sm font-semibold text-[#0B5AA5] border border-[#0B5AA5] focus:outline-none rounded-lg appearance-none bg-white"
               name="Sale"
               id="Sale"
             >
@@ -42,9 +42,9 @@ const Filter: React.FC = () => {
               <DownArrow />
             </div>
           </div>
-          <div className="relative">
+          <div className="relative flex-shrink-0">
             <select
-              className="min-w-36 px-4 py-3 text-sm font-normal border border-gray-300 rounded-lg appearance-none bg-white"
+              className="w-24 xl:min-w-36 px-2 xl:px-4 py-3 text-sm font-normal border border-gray-300 rounded-lg appearance-none bg-white"
               name="Pricing"
               id="Pricing"
             >
@@ -56,9 +56,9 @@ const Filter: React.FC = () => {
               <DownArrow />
             </div>
           </div>
-          <div className="relative">
+          <div className="relative flex-shrink-0">
             <select
-              className="min-w-44 px-4 py-3 text-sm font-normal border border-gray-300 rounded-lg appearance-none bg-white"
+              className="w-32 xl:min-w-44 px-2 xl:px-4 py-3 text-sm font-normal border border-gray-300 rounded-lg appearance-none bg-white"
               name="BedsBaths"
               id="BedsBaths"
             >
@@ -68,9 +68,9 @@ const Filter: React.FC = () => {
               <DownArrow />
             </div>
           </div>
-          <div className="relative">
+          <div className="relative flex-shrink-0">
             <select
-              className="min-w-40 px-4 py-3 text-sm font-normal border border-gray-300 rounded-lg appearance-none bg-white"
+              className="w-32 xl:min-w-40 px-2 xl:px-4 py-3 text-sm font-normal border border-gray-300 rounded-lg appearance-none bg-white"
               name="PropertyType"
               id="PropertyType"
             >
@@ -81,12 +81,12 @@ const Filter: React.FC = () => {
             </div>
           </div>
 
-          <button className="flex items-center gap-3 px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50">
+          <button className="flex items-center gap-2 xl:gap-3 px-3 xl:px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 flex-shrink-0">
             <Filters />
             <span className="font-normal text-sm">Filters</span>
           </button>
 
-          <button className="flex items-center gap-3 px-4 py-3 border border-gray-300 rounded-full hover:bg-gray-50">
+          <button className="flex items-center gap-2 xl:gap-3 px-3 xl:px-4 py-3 border border-gray-300 rounded-full hover:bg-gray-50 flex-shrink-0">
             <Pen />
             <span className="font-medium text-sm">Saved</span>
           </button>

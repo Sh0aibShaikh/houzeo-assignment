@@ -5,7 +5,7 @@ import { Hamburger, UserIcon } from "../Icons";
 const Header: React.FC = () => {
   return (
     <header className="bg-white border border-b-gray-300">
-      <div className="max-w-[1400px] mx-auto px-3 lg:px-6 py-4 flex items-center justify-between">
+      <div className="max-w-screen-2xl mx-auto px-3 lg:px-6 py-4 flex items-center justify-between">
         <button className="lg:hidden text-gray-700">
           <Hamburger />
         </button>
@@ -34,13 +34,9 @@ const Header: React.FC = () => {
               </a>
             )
           )}
-          <div className="max-w-14">
-            <div className="font-normal text-sm text-black overflow-hidden text-nowrap text-ellipsis">
-              (844) 448-0110
-            </div>
-            <div className="font-normal text-xs text-black overflow-hidden text-nowrap text-ellipsis">
-              (9am to 6pm CST, Mon-Sat)
-            </div>
+          <div className="hidden xl:block min-w-[120px]">
+            <div className="font-normal text-sm text-black whitespace-nowrap">(844) 448-0110</div>
+            <div className="font-normal text-xs text-black whitespace-nowrap">(9am to 6pm CST, Mon-Sat)</div>
           </div>
         </nav>
 

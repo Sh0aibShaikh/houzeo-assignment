@@ -45,7 +45,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
       </div>
 
-      <div className="p-5">
+      <div className="p-3">
         <div className="flex items-center justify-between mb-3">
           <span className="flex items-center gap-2 rounded-full px-2 py-1.5 text-xs font-normal text-black border border-[#0000001A]">
             <span className=" w-3 h-3 rounded-full bg-green-500 "></span>
@@ -60,16 +60,16 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         <div className="flex justify-between items-center">
           <div className="text-lg font-semibold text-[#0B5AA5] mb-2">{property.price}</div>
           <div className="flex gap-4 text-base text-[#00000080] mb-3">
-            <span className="font-medium">
-              <span className="text-[#0B5AA5]">{property.beds} </span>
+            <span className="font-medium text-xs">
+              <span className="text-sm text-[#0B5AA5] font-semibold">{property.beds} </span>
               Beds
             </span>
-            <span className="font-medium">
-              <span className="text-[#0B5AA5]">{property.baths} </span>
+            <span className="font-medium text-xs">
+              <span className="text-sm text-[#0B5AA5] font-semibold">{property.baths} </span>
               Baths
             </span>
-            <span className="font-medium">
-              <span className="text-[#0B5AA5]">{property.sqft} </span>
+            <span className="font-medium text-xs">
+              <span className="text-sm text-[#0B5AA5] font-semibold">{property.sqft} </span>
               sqft
             </span>
           </div>

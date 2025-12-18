@@ -13,7 +13,7 @@ function App() {
         <Filter />
       </div>
 
-      <div className="pt-44 md:pt-44 lg:pt-36 flex flex-col lg:flex-row gap-8 max-w-screen-2xl mx-auto px-4 lg:px-8 py-8">
+      <div className="pt-44 md:pt-44 lg:pt-36 flex flex-col lg:flex-row gap-6 max-w-screen-2xl mx-auto px-4 lg:px-6 py-8">
         <div className="hidden lg:block lg:w-1/2 xl:w-2/4 flex-shrink-0">
           <div className="">
             <img src={USMap} alt="US Map with property markers" className="w-full shadow-lg object-cover" />
