@@ -1,8 +1,9 @@
 export { default as DownArrow } from "./DownArrow";
 export { default as UserIcon } from "./UserIcon";
-export { default as Burger } from "./Burger";
+export { default as Hamburger } from "./Hamburger";
 export { default as Filters } from "./Filters";
 export { default as Pen } from "./Pen";
 export { default as Search } from "./Search";
 export { default as Cross } from "./Cross";
 export { default as Eye } from "./Eye";
+export { default as Heart } from "./Heart";

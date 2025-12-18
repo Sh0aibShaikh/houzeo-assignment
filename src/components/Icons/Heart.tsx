@@ -1,14 +1,27 @@
-const Heart: React.FC = () => {
+import React from 'react';
+
+const Heart: React.FC<React.SVGProps<SVGSVGElement> & { size?: number }> = ({ className, size, ...props }) => {
+  const width = size ?? 22;
+  const height = size ? Math.round((20 / 22) * size) : 20;
+
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width}
+      height={height}
+      viewBox="0 0 22 20"
+      fill="none"
+      className={className}
+      {...props}
+    >
       <path
         d="M6 1C3.239 1 1 3.216 1 5.95C1 8.157 1.875 13.395 10.488 18.69C10.6423 18.7839 10.8194 18.8335 11 18.8335C11.1806 18.8335 11.3577 18.7839 11.512 18.69C20.125 13.395 21 8.157 21 5.95C21 3.216 18.761 1 16 1C13.239 1 11 4 11 4C11 4 8.761 1 6 1Z"
         fill="#222222"
-        fill-opacity="0.7"
+        fillOpacity={0.7}
         stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

@@ -1,6 +1,5 @@
 import { Property } from "../../types/property";
-import { Eye } from "../Icons";
-import Heart from "../Icons/Heart";
+import { Heart, Eye } from "../Icons";
 
 interface Props {
   data: Property;
@@ -11,18 +10,16 @@ export default function PropertyCard({ data }: Props) {
 
   return (
     <div className="bg-white rounded-xl overflow-hidden border hover:shadow-lg transition-shadow duration-300">
-      {/* Image */}
       <div className="relative h-56">
         <img src={images[0]} alt={address} loading="lazy" className="w-full h-full object-cover" />
 
-        {/* Days badge */}
         <span className="absolute top-3 left-3 bg-white text-sm px-3 py-1 rounded-full shadow">
           {daysOnHouzeo} days on Houzeo
         </span>
 
         {/* Heart */}
         <button className="absolute top-3 right-3 bg-white p-2 rounded-full group">
-          {/* <Heart size={18} className="text-gray-700 group-hover:animate-pulse" /> */}
+          <Heart size={18} className="text-gray-700 group-hover:animate-pulse" />
         </button>
 
         {/* Slider dots */}
@@ -48,7 +45,7 @@ export default function PropertyCard({ data }: Props) {
           </span>
 
           <span className="flex items-center gap-1 text-sm text-gray-500">
-            {/* <Eye size={16} /> */}
+            <Eye />
             {views}
           </span>
         </div>
