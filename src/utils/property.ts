@@ -17,7 +17,7 @@ export const properties: Property[] = [
     daysOnHouzeo: 6,
     views: "2.3K",
     source: "Nashville (Real Tracs Mid) MLS-TN as distributed by MLS GRID",
-    images: prop1,
+    images: [prop1, prop2, prop3, prop4],
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const properties: Property[] = [
     daysOnHouzeo: 12,
     views: "2.3K",
     source: "Sotheby's International Realty",
-    images: prop2,
+    images: [prop2, prop3, prop4, prop1],
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export const properties: Property[] = [
     daysOnHouzeo: 0,
     views: "2.3K",
     source: "Nashville (Real Tracs Mid) MLS-TN as distributed by MLS GRID",
-    images: prop3,
+    images: [prop3, prop4, prop1, prop2],
   },
   {
     id: 4,
@@ -59,6 +59,6 @@ export const properties: Property[] = [
     daysOnHouzeo: 10,
     views: "2.3K",
     source: "Nashville (Real Tracs Mid) MLS-TN as distributed by MLS GRID",
-    images: prop4,
+    images: [prop4, prop1, prop2, prop3],
   },
 ];

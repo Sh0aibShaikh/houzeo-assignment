@@ -9,7 +9,7 @@ const Filter: React.FC = () => {
         <div className="hidden lg:flex items-center justify-between gap-2">
           {/* Search Input */}
           <div className="relative flex-shrink-0">
-            <div className="w-72 xl:w-80 rounded-full p-[2px] bg-gradient-to-r from-[#2876C1] to-[#0E5293]">
+            <div className="w-72 xl:w-80 rounded-full p-0.5 bg-gradient-to-r from-[#2876C1] to-[#0E5293]">
               <input
                 className="w-full bg-white rounded-full py-2 pl-5 pr-12 text-gray-700 focus:outline-none"
                 type="text"
@@ -97,7 +97,7 @@ const Filter: React.FC = () => {
           {/* Search Bar */}
           <div className="flex items-center gap-3">
             <div className="relative flex-1">
-              <div className="rounded-full p-[2px] bg-gradient-to-r from-[#2876C1] to-[#0E5293]">
+              <div className="rounded-full p-0.5 bg-gradient-to-r from-[#2876C1] to-[#0E5293]">
                 <input
                   className="w-full bg-white rounded-full py-3 pl-5 pr-24 text-gray-700 focus:outline-none"
                   type="text"
@@ -106,7 +106,7 @@ const Filter: React.FC = () => {
                   id="SearchMobile"
                 />
               </div>
-              <div className="absolute inset-y-[2px] right-[2px] flex items-center gap-1 pr-1">
+              <div className="absolute inset-y-0.5 right-0.5 flex items-center gap-1 pr-1">
                 <button
                   className="w-10 h-10 rounded-full flex items-center justify-center text-gray-400 hover:text-gray-600"
                   aria-label="Clear search"

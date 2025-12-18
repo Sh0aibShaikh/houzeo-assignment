@@ -8,11 +8,17 @@ interface PropertyCardProps {
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   const [favorited, setFavorited] = useState(false);
+  const [index, setIndex] = useState(0);
 
   return (
-    <article className="relative flex flex-col w-full max-w-sm rounded-3xl overflow-hidden bg-white shadow-lg">
-      <div className="relative">
-        <img src={property.images} alt={property.address ?? "Property"} className="w-full h-64 md:h-72 object-cover" />
+    <article className="relative flex flex-col w-full max-w-sm lg:max-w-none rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-shadow duration-200">
+      <div className="relative group">
+        <img
+          src={property.images[index]}
+          alt={property.address ?? "Property"}
+          className="w-full h-64 md:h-72 object-cover"
+          loading="lazy"
+        />
         {property.daysOnHouzeo > 0 && (
           <div className="absolute top-4 left-4 rounded-full bg-white/90 backdrop-blur-sm px-4 py-2 text-xs font-medium text-gray-800 shadow-md">
             {property.daysOnHouzeo} days on Houzeo
@@ -29,7 +35,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           className="absolute top-4 right-4"
         >
           <span
-            className={`text-3xl select-none transition-colors duration-200 ${
+            className={`text-3xl select-none transition-colors duration-200 hover:animate-pulse ${
               favorited ? "text-red-500" : "text-gray-400"
             }`}
           >
@@ -37,10 +43,43 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           </span>
         </button>
 
-        {/* Dots Indicator (carousel) */}
+        {/* Nav Arrows */}
+        <button
+          type="button"
+          aria-label="Previous image"
+          onClick={(e) => {
+            e.stopPropagation();
+            setIndex((i) => (i - 1 + property.images.length) % property.images.length);
+          }}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity"
+        >
+          <span className="text-xl font-bold select-none">‹</span>
+        </button>
+
+        <button
+          type="button"
+          aria-label="Next image"
+          onClick={(e) => {
+            e.stopPropagation();
+            setIndex((i) => (i + 1) % property.images.length);
+          }}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity"
+        >
+          <span className="text-xl font-bold select-none">›</span>
+        </button>
+
+        {/* Dots */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i} className={`w-2 h-2 rounded-full ${i === 0 ? "bg-white/80" : "bg-white/40"}`}></div>
+          {property.images.map((_, i) => (
+            <button
+              key={i}
+              aria-label={`View image ${i + 1}`}
+              onClick={(e) => {
+                e.stopPropagation();
+                setIndex(i);
+              }}
+              className={`w-2 h-2 rounded-full ${i === index ? "bg-white/90" : "bg-white/40"}`}
+            />
           ))}
         </div>
       </div>
@@ -53,7 +92,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           </span>
           <span className="text-gray-500 font-normal text-xs flex items-center gap-1">
             <Eye />
-            2.3K
+            {property.views ?? '—'}
           </span>
         </div>
 

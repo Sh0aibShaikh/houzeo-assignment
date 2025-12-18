@@ -10,5 +10,5 @@ export interface Property {
   daysOnHouzeo: number;
   views?: string;
   source?: string;
-  images: string;
+  images: string[];
 }
