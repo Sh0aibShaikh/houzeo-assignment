@@ -57,7 +57,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           </span>
         </div>
 
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center flex-wrap">
           <div className="text-lg font-semibold text-[#0B5AA5] mb-2">{property.price}</div>
           <div className="flex gap-4 text-base text-[#00000080] mb-3">
             <span className="font-medium text-xs">
