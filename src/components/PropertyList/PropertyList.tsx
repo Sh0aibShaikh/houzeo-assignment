@@ -13,12 +13,16 @@ const PropertyList: React.FC<PropertyListProps> = ({ properties }) => {
       <div className="mb-6 lg:text-left">
         <h1 className="text-2xl md:text-lg font-semibold text-black">Austin, TX real estate & homes for sale</h1>
         <div className="flex justify-between items-center">
-          <p className="text-sm font-medium text-[#00000066]">2,010 Homes Homes</p>
+          <p className="text-sm font-medium text-[#00000066]">2,010 Homes</p>
           <div className="relative text-[#00000066] font-medium text-sm">
             Sort by:
-            <select id="listing" name="listing" className="text-[#0B5AA5] ml-2 pr-6 bg-transparent appearance-none cursor-pointer">
-              <option value={'newListing'}>New Listing</option>
-              <option value={'oldListing'}>Old Listing</option>
+            <select
+              id="listing"
+              name="listing"
+              className="text-[#0B5AA5] ml-2 pr-6 bg-transparent appearance-none cursor-pointer"
+            >
+              <option value={"newListing"}>New Listing</option>
+              <option value={"oldListing"}>Old Listing</option>
             </select>
             <button className="text-[#0B5AA5] cursor-pointer absolute right-0 -top-0.5">
               <DownArrow />

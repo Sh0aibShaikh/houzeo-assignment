@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Property } from "../../types/property";
-import { Eye, Heart } from "../Icons";
+import { Eye, Heart, RightArrow } from "../Icons";
 
 interface PropertyCardProps {
   property: Property;
@@ -11,7 +11,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <article className="relative flex flex-col w-full max-w-sm lg:max-w-none rounded-3xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-shadow duration-200">
+    <article className="relative flex flex-col w-full max-w-sm lg:max-w-none rounded-2xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-shadow duration-200">
       <div className="relative group">
         <img
           src={property.images[index]}
@@ -51,9 +51,9 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
             e.stopPropagation();
             setIndex((i) => (i - 1 + property.images.length) % property.images.length);
           }}
-          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity"
+          className="py-2 px-2.5 absolute left-3 top-1/2 -translate-y-1/2 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
         >
-          <span className="text-xl font-bold select-none">‹</span>
+          <RightArrow className="rotate-180" />
         </button>
 
         <button
@@ -63,9 +63,9 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
             e.stopPropagation();
             setIndex((i) => (i + 1) % property.images.length);
           }}
-          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity"
+          className="py-2 px-2.5 absolute right-3 top-1/2 -translate-y-1/2 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
         >
-          <span className="text-xl font-bold select-none">›</span>
+          <RightArrow />
         </button>
 
         {/* Dots */}
@@ -92,7 +92,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           </span>
           <span className="text-gray-500 font-normal text-xs flex items-center gap-1">
             <Eye />
-            {property.views ?? '—'}
+            {property.views ?? "—"}
           </span>
         </div>
 
