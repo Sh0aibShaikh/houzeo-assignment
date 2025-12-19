@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/houzeo-assignment/static/css/main.2b568f70.css",
+    "main.js": "/houzeo-assignment/static/js/main.5d14be2d.js",
+    "static/js/453.e54e8f17.chunk.js": "/houzeo-assignment/static/js/453.e54e8f17.chunk.js",
+    "static/media/Poppins-Thin.ttf": "/houzeo-assignment/static/media/Poppins-Thin.59ff6a729e30c99b478e.ttf",
+    "static/media/Poppins-Light.ttf": "/houzeo-assignment/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/Poppins-Regular.ttf": "/houzeo-assignment/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/houzeo-assignment/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/houzeo-assignment/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/property-3.png": "/houzeo-assignment/static/media/property-3.f1e36818c87c1ea6b678.png",
+    "static/media/Poppins-Bold.ttf": "/houzeo-assignment/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/property-2.png": "/houzeo-assignment/static/media/property-2.c8a615987a2579fe8c81.png",
+    "static/media/Poppins-ExtraBold.ttf": "/houzeo-assignment/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
+    "static/media/Poppins-Black.ttf": "/houzeo-assignment/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/property-4.png": "/houzeo-assignment/static/media/property-4.77ab6e6ba4a3fad089da.png",
+    "static/media/property-1.png": "/houzeo-assignment/static/media/property-1.c2b75c9a766fbefaef14.png",
+    "index.html": "/houzeo-assignment/index.html",
+    "main.2b568f70.css.map": "/houzeo-assignment/static/css/main.2b568f70.css.map",
+    "main.5d14be2d.js.map": "/houzeo-assignment/static/js/main.5d14be2d.js.map",
+    "453.e54e8f17.chunk.js.map": "/houzeo-assignment/static/js/453.e54e8f17.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b568f70.css",
+    "static/js/main.5d14be2d.js"
+  ]
+}
