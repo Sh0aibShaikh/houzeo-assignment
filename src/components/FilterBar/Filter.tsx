@@ -31,7 +31,7 @@ const Filter: React.FC = () => {
           {/* Desktop Filters */}
           <div className="relative flex-shrink-0">
             <select
-              className="w-28 xl:min-w-36 px-3 xl:px-4 py-3 text-sm font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
+              className="w-28 xl:min-w-36 px-3 xl:px-4 py-3 text-sm cursor-pointer font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
               name="Sale"
               id="Sale"
             >
@@ -44,7 +44,7 @@ const Filter: React.FC = () => {
           </div>
           <div className="relative flex-shrink-0">
             <select
-              className="w-24 xl:min-w-36 px-2 xl:px-4 py-3 text-sm font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
+              className="w-24 xl:min-w-36 px-2 xl:px-4 py-3 text-sm cursor-pointer font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
               name="Pricing"
               id="Pricing"
             >
@@ -58,7 +58,7 @@ const Filter: React.FC = () => {
           </div>
           <div className="relative flex-shrink-0">
             <select
-              className="w-32 xl:min-w-44 px-2 xl:px-4 py-3 text-sm font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
+              className="w-32 xl:min-w-44 px-2 xl:px-4 py-3 text-sm cursor-pointer font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
               name="BedsBaths"
               id="BedsBaths"
             >
@@ -70,7 +70,7 @@ const Filter: React.FC = () => {
           </div>
           <div className="relative flex-shrink-0">
             <select
-              className="w-32 xl:min-w-40 px-2 xl:px-4 py-3 text-sm font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
+              className="w-32 xl:min-w-40 px-2 xl:px-4 py-3 text-sm cursor-pointer font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
               name="PropertyType"
               id="PropertyType"
             >
@@ -124,7 +124,7 @@ const Filter: React.FC = () => {
 
             <button
               aria-label="Filters"
-              className="relative w-11 h-11 rounded-full border-2 border-[#0B5AA5] bg-white flex items-center justify-center text-[#0B5AA5] hover:bg-gray-50 flex-shrink-0"
+              className="relative w-11 h-11 cursor-pointer rounded-full border-2 border-[#0B5AA5] bg-white flex items-center justify-center text-[#0B5AA5] hover:bg-gray-50 flex-shrink-0"
             >
               <Filters />
               <span className="absolute -top-1 -right-1 inline-flex items-center justify-center w-5 h-5 text-xs font-medium bg-[#0B5AA5] text-white rounded-full">
@@ -137,7 +137,7 @@ const Filter: React.FC = () => {
             <div className="flex-1 flex items-center gap-3">
               <div className="relative group">
                 <select
-                  className="flex-1 pl-2 pr-6 py-2 text-xs font-semibold text-gray-700 focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
+                  className="flex-1 pl-2 pr-6 py-2 text-xs cursor-pointer font-semibold text-gray-700 focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
                   name="SaleMobile"
                   id="SaleMobile"
                 >
@@ -150,7 +150,7 @@ const Filter: React.FC = () => {
               </div>
               <div className="relative group">
                 <select
-                  className="flex-1 pl-2 pr-0 py-2 text-xs font-normal text-gray-700 focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
+                  className="flex-1 pl-2 pr-0 py-2 text-xs cursor-pointer font-normal text-gray-700 focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
                   name="PriceMobile"
                   id="PriceMobile"
                 >
