@@ -9,7 +9,7 @@ const Filter: React.FC = () => {
         <div className="hidden lg:flex items-center justify-between gap-2">
           {/* Search Input */}
           <div className="relative flex-shrink-0">
-            <div className="w-72 xl:w-80 rounded-full p-0.5 border border-gray-300 transition-all duration-500 hover:border-[#0B5AA5] focus-within:border-transparent focus-within:bg-gradient-to-r focus-within:from-[#2876C1] focus-within:to-[rgb(14,82,147)]">
+            <div className="w-72 xl:w-80 rounded-full p-0.5 border border-gray-300 transition-all duration-500 hover:border-[#0B5AA5] focus-within:border-transparent focus-within:bg-gradient-to-r focus-within:from-[#2876C1] focus-within:to-[#0E5293]">
               <input
                 className="w-full bg-white rounded-full py-2 pl-5 pr-12 text-gray-700 focus:outline-none"
                 type="text"
