@@ -3,6 +3,7 @@ import Filter from "./components/FilterBar";
 import PropertyList from "./components/PropertyList";
 import PropertyMap from "./components/PropertyMap/PropertyMap";
 import { properties } from "./utils/property";
+import { MapIcon } from "./components/Icons";
 
 function App() {
   return (
@@ -22,6 +23,11 @@ function App() {
           <PropertyList properties={properties} />
         </div>
       </div>
+
+      <button className="lg:hidden fixed left-1/2 -translate-x-1/2 bottom-6 z-40 bg-[#0E5293] text-white px-5 py-3 rounded-full flex items-center gap-3 shadow-lg hover:scale-105 transform transition duration-200">
+        <span className="font-semibold">Map</span>
+        <MapIcon />
+      </button>
     </div>
   );
 }

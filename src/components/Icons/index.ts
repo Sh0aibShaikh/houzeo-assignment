@@ -8,3 +8,4 @@ export { default as Cross } from "./Cross";
 export { default as Eye } from "./Eye";
 export { default as Heart } from "./Heart";
 export { default as RightArrow } from "./RightArrow";
+export { default as MapIcon } from "./MapIcon";
