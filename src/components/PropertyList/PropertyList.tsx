@@ -11,9 +11,9 @@ const PropertyList: React.FC<PropertyListProps> = ({ properties }) => {
     <div>
       {/* Title & Count */}
       <div className="mb-6 lg:text-left">
-        <h1 className="text-2xl md:text-lg font-semibold text-black">Austin, TX real estate & homes for sale</h1>
+        <h1 className="text-lg font-semibold text-black">Austin, TX real estate & homes for sale</h1>
         <div className="flex justify-between items-center">
-          <p className="text-sm font-medium text-[#00000066]">2,010 Homes</p>
+          <p className="text-sm mt-2 font-medium text-[#00000066]">2,010 Homes</p>
           <div className="relative text-[#00000066] font-medium text-sm">
             Sort by:
             <select
