@@ -1,9 +1,8 @@
-// src/App.tsx
 import Header from "./components/Header";
 import Filter from "./components/FilterBar";
 import PropertyList from "./components/PropertyList";
+import PropertyMap from "./components/PropertyMap/PropertyMap";
 import { properties } from "./utils/property";
-import USMap from "./assets/USMap.png"; // Keep your map image
 
 function App() {
   return (
@@ -15,9 +14,7 @@ function App() {
 
       <div className="pt-44 md:pt-44 lg:pt-36 flex flex-col lg:flex-row gap-6 max-w-screen-2xl mx-auto px-4 lg:px-6 py-8">
         <div className="hidden lg:block lg:w-1/2 xl:w-2/4 flex-shrink-0">
-          <div className="">
-            <img src={USMap} alt="US Map with property markers" className="w-full shadow-lg object-cover" />
-          </div>
+          <PropertyMap />
         </div>
 
         {/* Right: Listings Section */}

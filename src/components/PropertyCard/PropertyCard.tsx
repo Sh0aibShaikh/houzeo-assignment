@@ -11,7 +11,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <article className="relative flex flex-col w-full max-w-sm lg:max-w-none rounded-2xl overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-shadow duration-200">
+    <article className="relative flex flex-col w-full max-w-sm lg:max-w-none rounded-2xl overflow-hidden bg-white shadow-lg transform transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-2xl">
       <div className="relative group">
         <img
           src={property.images[index]}
@@ -35,7 +35,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
           className="absolute top-4 right-4"
         >
           <span
-            className={`text-3xl select-none transition-colors duration-200 hover:animate-pulse ${
+            className={`text-3xl select-none transform transition-colors duration-200 heart-pulse ${
               favorited ? "text-red-500" : "text-gray-400"
             }`}
           >

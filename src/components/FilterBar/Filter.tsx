@@ -9,7 +9,7 @@ const Filter: React.FC = () => {
         <div className="hidden lg:flex items-center justify-between gap-2">
           {/* Search Input */}
           <div className="relative flex-shrink-0">
-            <div className="w-72 xl:w-80 rounded-full p-0.5 bg-gradient-to-r from-[#2876C1] to-[#0E5293]">
+            <div className="w-72 xl:w-80 rounded-full p-0.5 border border-gray-300 transition-all duration-500 hover:border-[#0B5AA5] focus-within:border-transparent focus-within:bg-gradient-to-r focus-within:from-[#2876C1] focus-within:to-[rgb(14,82,147)]">
               <input
                 className="w-full bg-white rounded-full py-2 pl-5 pr-12 text-gray-700 focus:outline-none"
                 type="text"
@@ -31,20 +31,20 @@ const Filter: React.FC = () => {
           {/* Desktop Filters */}
           <div className="relative flex-shrink-0">
             <select
-              className="w-28 xl:min-w-36 px-3 xl:px-4 py-3 text-sm font-semibold text-[#0B5AA5] border border-[#0B5AA5] focus:outline-none rounded-lg appearance-none bg-white"
+              className="w-28 xl:min-w-36 px-3 xl:px-4 py-3 text-sm font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
               name="Sale"
               id="Sale"
             >
               <option>For Sale</option>
               <option>Sold</option>
             </select>
-            <div className="pointer-events-none text-[#0B5AA5] absolute right-2 top-1/2 -translate-y-1/2">
+            <div className="pointer-events-none transition-colors duration-500 hover:border-[#0B5AA5] absolute right-2 top-1/2 -translate-y-1/2">
               <DownArrow />
             </div>
           </div>
           <div className="relative flex-shrink-0">
             <select
-              className="w-24 xl:min-w-36 px-2 xl:px-4 py-3 text-sm font-normal border border-gray-300 rounded-lg appearance-none bg-white"
+              className="w-24 xl:min-w-36 px-2 xl:px-4 py-3 text-sm font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
               name="Pricing"
               id="Pricing"
             >
@@ -58,7 +58,7 @@ const Filter: React.FC = () => {
           </div>
           <div className="relative flex-shrink-0">
             <select
-              className="w-32 xl:min-w-44 px-2 xl:px-4 py-3 text-sm font-normal border border-gray-300 rounded-lg appearance-none bg-white"
+              className="w-32 xl:min-w-44 px-2 xl:px-4 py-3 text-sm font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
               name="BedsBaths"
               id="BedsBaths"
             >
@@ -70,7 +70,7 @@ const Filter: React.FC = () => {
           </div>
           <div className="relative flex-shrink-0">
             <select
-              className="w-32 xl:min-w-40 px-2 xl:px-4 py-3 text-sm font-normal border border-gray-300 rounded-lg appearance-none bg-white"
+              className="w-32 xl:min-w-40 px-2 xl:px-4 py-3 text-sm font-normal focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
               name="PropertyType"
               id="PropertyType"
             >
@@ -81,12 +81,12 @@ const Filter: React.FC = () => {
             </div>
           </div>
 
-          <button className="flex items-center gap-2 xl:gap-3 px-3 xl:px-4 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 flex-shrink-0">
+          <button className="flex items-center gap-2 xl:gap-3 px-3 xl:px-4 py-3 focus:outline-none border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-500 hover:border-[#0B5AA5] flex-shrink-0">
             <Filters />
             <span className="font-normal text-sm">Filters</span>
           </button>
 
-          <button className="flex items-center gap-2 xl:gap-3 px-3 xl:px-4 py-3 border border-gray-300 rounded-full hover:bg-gray-50 flex-shrink-0">
+          <button className="flex items-center gap-2 xl:gap-3 px-3 xl:px-4 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors duration-500 hover:border-[#0B5AA5] flex-shrink-0">
             <Pen />
             <span className="font-medium text-sm">Saved</span>
           </button>
@@ -97,7 +97,7 @@ const Filter: React.FC = () => {
           {/* Search Bar */}
           <div className="flex items-center gap-3">
             <div className="relative flex-1">
-              <div className="rounded-full p-0.5 bg-gradient-to-r from-[#2876C1] to-[#0E5293]">
+              <div className="rounded-full p-0.5 bg-gradient-to-r from-[#2876C1] to-[#0E5293] transition-all duration-500 hover:from-[#1e5fa1] hover:to-[#0a3d73]">
                 <input
                   className="w-full bg-white rounded-full py-3 pl-5 pr-24 text-gray-700 focus:outline-none"
                   type="text"
@@ -135,22 +135,22 @@ const Filter: React.FC = () => {
           {/* Mobile Buttons Row */}
           <div className="flex items-center justify-between gap-3">
             <div className="flex-1 flex items-center gap-3">
-              <div className="relative">
+              <div className="relative group">
                 <select
-                  className="flex-1 pl-2 pr-6 py-2 text-xs font-semibold focus:outline-none text-[#0B5AA5] border border-[#0B5AA5] rounded-lg appearance-none bg-white"
+                  className="flex-1 pl-2 pr-6 py-2 text-xs font-semibold text-gray-700 focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
                   name="SaleMobile"
                   id="SaleMobile"
                 >
                   <option>For Sale</option>
                   <option>Sold</option>
                 </select>
-                <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 text-[#0B5AA5]">
+                <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-[#0B5AA5] transition-colors duration-500">
                   <DownArrow />
                 </div>
               </div>
-              <div className="relative">
+              <div className="relative group">
                 <select
-                  className="flex-1 pl-2 pr-0 py-2 text-xs font-normal text-gray-700 border border-gray-300 rounded-lg appearance-none bg-white"
+                  className="flex-1 pl-2 pr-0 py-2 text-xs font-normal text-gray-700 focus:outline-none border border-gray-300 rounded-lg appearance-none bg-white transition-colors duration-500 hover:border-[#0B5AA5]"
                   name="PriceMobile"
                   id="PriceMobile"
                 >
@@ -158,7 +158,7 @@ const Filter: React.FC = () => {
                   <option>Low to High</option>
                   <option>High to Low</option>
                 </select>
-                <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2">
+                <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-[#0B5AA5] transition-colors duration-500">
                   <DownArrow />
                 </div>
               </div>
