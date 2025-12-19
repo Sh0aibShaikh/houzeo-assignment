@@ -3,8 +3,8 @@ import { Cross, DownArrow, Filters, Pen, Search } from "../Icons";
 
 const Filter: React.FC = () => {
   return (
-    <div className="bg-white border-b border-gray-300 shadow-md">
-      <div className="max-w-screen-2xl mx-auto px-3 lg:px-6 py-4">
+    <div className="bg-white rounded-b-2xl md:rounded-none border-b border-gray-300 shadow-md">
+      <div className="max-w-screen-2xl rounded-xl mx-auto px-3 lg:px-6 py-4">
         {/* Desktop Layout - Hidden on mobile */}
         <div className="hidden lg:flex items-center justify-between gap-2">
           {/* Search Input */}

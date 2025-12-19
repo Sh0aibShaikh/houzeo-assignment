@@ -8,7 +8,7 @@ import { MapIcon } from "./components/Icons";
 function App() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+      <div className="fixed top-0 left-0 right-0 z-50 rounded-2xl mx-auto bg-white shadow-sm">
         <Header />
         <Filter />
       </div>
@@ -19,7 +19,7 @@ function App() {
         </div>
 
         {/* Right: Listings Section */}
-        <div className="pt-12 w-full lg:w-1/2 xl:w-2/4">
+        <div className="pt-14 md:pt-12 w-full lg:w-1/2 xl:w-2/4">
           <PropertyList properties={properties} />
         </div>
       </div>
