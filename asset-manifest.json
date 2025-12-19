@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/houzeo-assignment/static/css/main.2b568f70.css",
-    "main.js": "/houzeo-assignment/static/js/main.0d6087af.js",
+    "main.css": "/houzeo-assignment/static/css/main.7584511b.css",
+    "main.js": "/houzeo-assignment/static/js/main.3ab9cc39.js",
     "static/js/453.e54e8f17.chunk.js": "/houzeo-assignment/static/js/453.e54e8f17.chunk.js",
     "static/media/Poppins-Thin.ttf": "/houzeo-assignment/static/media/Poppins-Thin.59ff6a729e30c99b478e.ttf",
     "static/media/Poppins-Light.ttf": "/houzeo-assignment/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
@@ -16,12 +16,12 @@
     "static/media/property-4.png": "/houzeo-assignment/static/media/property-4.77ab6e6ba4a3fad089da.png",
     "static/media/property-1.png": "/houzeo-assignment/static/media/property-1.c2b75c9a766fbefaef14.png",
     "index.html": "/houzeo-assignment/index.html",
-    "main.2b568f70.css.map": "/houzeo-assignment/static/css/main.2b568f70.css.map",
-    "main.0d6087af.js.map": "/houzeo-assignment/static/js/main.0d6087af.js.map",
+    "main.7584511b.css.map": "/houzeo-assignment/static/css/main.7584511b.css.map",
+    "main.3ab9cc39.js.map": "/houzeo-assignment/static/js/main.3ab9cc39.js.map",
     "453.e54e8f17.chunk.js.map": "/houzeo-assignment/static/js/453.e54e8f17.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b568f70.css",
-    "static/js/main.0d6087af.js"
+    "static/css/main.7584511b.css",
+    "static/js/main.3ab9cc39.js"
   ]
 }
